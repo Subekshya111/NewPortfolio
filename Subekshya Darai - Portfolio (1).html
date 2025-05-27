@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<!-- saved from url=(0104)file:///Users/mac/Desktop/1st%20Summer%202nd%20year/Web%20Dsign%20and%20development/NewSu/portfolio.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subekshya Darai - Portfolio</title>
+    <link href="./Subekshya Darai - Portfolio_files/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Subekshya Darai - Portfolio_files/all.min.css">
+    <link href="./Subekshya Darai - Portfolio_files/css2" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .accent {
+            color: #8a2be2;
+        }
+        .section {
+            padding: 3rem 0;
+            border-bottom: 1px solid #333;
+        }
+        .skill-bar {
+            height: 8px;
+            background-color: #333;
+            border-radius: 4px;
+            margin-bottom: 1.5rem;
+        }
+        .skill-progress {
+            height: 100%;
+            border-radius: 4px;
+            background: linear-gradient(90deg, #8a2be2, #4a148c);
+        }
+        .card {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .profile-img-container {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 3px solid #8a2be2;
+            margin: 0 auto;
+        }
+        .social-icon {
+            color: #8a2be2;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .social-icon:hover {
+            color: #9d4edd;
+            transform: scale(1.2);
+        }
+        .nav-link {
+            position: relative;
+            color: #e0e0e0;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 500;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #8a2be2;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .btn {
+            background: linear-gradient(90deg, #8a2be2, #4a148c);
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Header Section -->
+    <header class="py-6 bg-gray-900 sticky top-0 z-10">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-2xl font-bold mb-4 md:mb-0">
+                <span class="text-white">Subekshya</span>
+                <span class="accent">Darai</span>
+            </h1>
+            <nav class="flex flex-wrap justify-center">
+                <a href="file:///Users/mac/Desktop/1st%20Summer%202nd%20year/Web%20Dsign%20and%20development/NewSu/portfolio.html#about" class="nav-link">About</a>
+                <a href="file:///Users/mac/Desktop/1st%20Summer%202nd%20year/Web%20Dsign%20and%20development/NewSu/portfolio.html#education" class="nav-link">Education</a>
+                <a href="file:///Users/mac/Desktop/1st%20Summer%202nd%20year/Web%20Dsign%20and%20development/NewSu/portfolio.html#skills" class="nav-link">Skills</a>
+                <a href="file:///Users/mac/Desktop/1st%20Summer%202nd%20year/Web%20Dsign%20and%20development/NewSu/portfolio.html#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-20 bg-gray-800 text-center">
+        <div class="container mx-auto px-4">
+            <div class="profile-img-container mx-auto mb-8">
+                <!-- Placeholder user image -->
+                <img src="./Subekshya Darai - Portfolio_files/image.png" alt="Subekshya Darai" class="w-full h-full object-cover">
+            </div>
+            <h1 class="text-4xl font-bold mb-4">Subekshya Darai</h1>
+            <p class="text-xl text-gray-400 mb-8">BIT Student at Model Institute of Technology</p>
+            <div class="flex justify-center space-x-4">
+                <a href="file:///Users/mac/Desktop/1st%20Summer%202nd%20year/Web%20Dsign%20and%20development/NewSu/portfolio.html#contact" class="btn">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">
+                About <span class="accent">Me</span>
+            </h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <div class="card p-6">
+                        <h3 class="text-2xl font-semibold mb-4">Who I Am</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            I am Subekshya Darai, a dedicated student pursuing a Bachelor's degree in Information Technology at 
+                            Model Institute of Technology. I am passionate about learning new technologies and developing my skills 
+                            in the IT field.
+                        </p>
+                        <p class="text-gray-400 leading-relaxed mt-4">
+                            As a beginner in this field, I am eager to explore various aspects of technology including programming, 
+                            web development, and data analysis. I believe in continuous learning and am committed to building a 
+                            strong foundation in IT principles.
+                        </p>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-8">
+                    <div class="card p-6">
+                        <h3 class="text-2xl font-semibold mb-4">Personal Details</h3>
+                        <ul class="space-y-3 text-gray-400">
+                            <li class="flex items-center">
+                                <i class="fas fa-user accent mr-3"></i>
+                                <span>Subekshya Darai</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-graduation-cap accent mr-3"></i>
+                                <span>BIT Student</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-map-marker-alt accent mr-3"></i>
+                                <span>Manmaiju, Kathmandu</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-envelope accent mr-3"></i>
+                                <span>subekshya.darai@example.com</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-Email accent mr-3"></i>
+                                <span></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">
+                My <span class="accent">Education</span>
+            </h2>
+            <div class="card p-6 mb-8">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+                    <h3 class="text-xl font-semibold">Bachelor of Information Technology (BIT)</h3>
+                    <span class="bg-gray-800 text-sm font-medium px-3 py-1 rounded-full mt-2 md:mt-0">2022 - Present</span>
+                </div>
+                <p class="text-lg mb-2">Model Institute of Technology</p>
+                <p class="text-gray-400">Currently pursuing my bachelor's degree with a focus on building fundamental knowledge in programming, database systems, and web technologies.</p>
+            </div>
+            <div class="card p-6">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+                    <h3 class="text-xl font-semibold">Higher Secondary Education</h3>
+                    <span class="bg-gray-800 text-sm font-medium px-3 py-1 rounded-full mt-2 md:mt-0">2020 - 2022</span>
+                </div>
+                <p class="text-lg mb-2">XYZ Higher Secondary School</p>
+                <p class="text-gray-400">Completed my +2 education with Science stream, focusing on Mathematics, Physics, and Computer Science.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">
+                My <span class="accent">Skills</span>
+            </h2>
+            <p class="text-center text-gray-400 mb-12">As a beginner in the field, I am currently developing the following skills:</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card p-6">
+                    <h3 class="text-2xl font-semibold mb-6">Technical Skills</h3>
+                    
+                    <div class="mb-4">
+                        <div class="flex justify-between mb-1">
+                            <span>HTML &amp; CSS</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 40%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="flex justify-between mb-1">
+                            <span>JavaScript</span>
+                            <span>25%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 25%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="flex justify-between mb-1">
+                            <span>Python</span>
+                            <span>30%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 30%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="flex justify-between mb-1">
+                            <span>Database Basics</span>
+                            <span>20%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 20%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card p-6">
+                    <h3 class="text-2xl font-semibold mb-6">Soft Skills</h3>
+                    
+                    <div class="mb-4">
+                        <div class="flex justify-between mb-1">
+                            <span>Problem Solving</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 40%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="flex justify-between mb-1">
+                            <span>Team Collaboration</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="flex justify-between mb-1">
+                            <span>Time Management</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="flex justify-between mb-1">
+                            <span>Communication</span>
+                            <span>55%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 55%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 card p-6">
+                <h3 class="text-2xl font-semibold mb-6">Currently Learning</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="text-center p-4 bg-gray-800 rounded-lg">
+                        <i class="fab fa-html5 text-4xl mb-2 accent"></i>
+                        <p>HTML</p>
+                    </div>
+                    <div class="text-center p-4 bg-gray-800 rounded-lg">
+                        <i class="fab fa-css3-alt text-4xl mb-2 accent"></i>
+                        <p>CSS</p>
+                    </div>
+                    <div class="text-center p-4 bg-gray-800 rounded-lg">
+                        <i class="fab fa-js text-4xl mb-2 accent"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="text-center p-4 bg-gray-800 rounded-lg">
+                        <i class="fab fa-python text-4xl mb-2 accent"></i>
+                        <p>Python</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section pb-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">
+                Contact <span class="accent">Me</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card p-6">
+                    <h3 class="text-2xl font-semibold mb-6">Get In Touch</h3>
+                    <p class="text-gray-400 mb-6">
+                        I'm currently looking for opportunities to apply and expand my IT knowledge. 
+                        Feel free to reach out if you have any questions or would like to connect.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="mr-4">
+                                <i class="fas fa-map-marker-alt accent text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-medium">Address</h4>
+                                <p class="text-gray-400">Manmaiju, Kathmandu, Nepal</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="mr-4">
+                                <i class="fas fa-envelope accent text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-medium">Email</h4>
+                                <p class="text-gray-400">Sbee8723@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="mr-4">
+                                <i class="fas fa-phone accent text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-medium">Phone</h4>
+                                <p class="text-gray-400">+977 9800000000</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="text-lg font-medium mb-4">Social Media</h4>
+                        <div class="flex space-x-4">
+                            <a href="file:///Users/mac/Desktop/1st%20Summer%202nd%20year/Web%20Dsign%20and%20development/NewSu/portfolio.html#" class="social-icon">
+                                <i class="fab fa-linkedin text-2xl"></i>
+                            </a>
+                            <a href="file:///Users/mac/Desktop/1st%20Summer%202nd%20year/Web%20Dsign%20and%20development/NewSu/portfolio.html#" class="social-icon">
+                                <i class="fab fa-github text-2xl"></i>
+                            </a>
+                            <a href="file:///Users/mac/Desktop/1st%20Summer%202nd%20year/Web%20Dsign%20and%20development/NewSu/portfolio.html#" class="social-icon">
+                                <i class="fab fa-twitter text-2xl"></i>
+                            </a>
+                            <a href="file:///Users/mac/Desktop/1st%20Summer%202nd%20year/Web%20Dsign%20and%20development/NewSu/portfolio.html#" class="social-icon">
+                                <i class="fab fa-instagram text-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card p-6">
+                    <h3 class="text-2xl font-semibold mb-6">Send Message</h3>
+                    <form>
+                        <div class="mb-4">
+                            <label for="name" class="block mb-2 text-sm font-medium">Your Name</label>
+                            <input type="text" id="name" class="w-full p-3 bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600" placeholder="Enter your name" required="">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="email" class="block mb-2 text-sm font-medium">Your Email</label>
+                            <input type="email" id="email" class="w-full p-3 bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600" placeholder="Enter your email" required="">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="subject" class="block mb-2 text-sm font-medium">Subject</label>
+                            <input type="text" id="subject" class="w-full p-3 bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600" placeholder="Enter subject" required="">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="message" class="block mb-2 text-sm font-medium">Message</label>
+                            <textarea id="message" rows="4" class="w-full p-3 bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600" placeholder="Enter your message" required=""></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn w-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-4">
+                <span class="text-white">Subekshya</span>
+                <span class="accent">Darai</span>
+            </h2>
+            <p class="text-gray-400 mb-6">BIT Student at Model Institute of Technology</p>
+            <p class="text-gray-500">© 2023 Subekshya Darai. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+
+</body></html>
